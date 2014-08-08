@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	<script type="text/javascript" src="js/project.js"></script>
+</head>
+<html>
+<body>
+
+	<div ng-app="myApp">
+	   <input ng-model="inputText" />
+	   <p>Text appears here: {{ inputText }}</p>
+	   <p ng-hide="text">You haven't written anything :(</p>
+	   <p ng-show="text">Hooray! You wrote something :)</p>
+	</div>
+
+</body>
+</html>
