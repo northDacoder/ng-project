@@ -2,17 +2,27 @@
 <head>
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-	<script type="text/javascript" src="js/project.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/project.js"></script>
 </head>
 <html>
 <body>
-
-	<div ng-app="myApp">
-	   <input ng-model="inputText" />
-	   <p>Text appears here: {{ inputText }}</p>
-	   <p ng-hide="text">You haven't written anything :(</p>
-	   <p ng-show="text">Hooray! You wrote something :)</p>
+<div class="container">
+	<div class="row" style="margin-top: 100px;">
+		<div ng-app="myApp" class="col-sm-8 col-sm-offset-2">
+		   <input ng-model="inputText" class="input-lg" />
+		   <p>Text appears here: {{ inputText }}</p>
+		   <p ng-hide="text">You haven't written anything :(</p>
+		   <p ng-show="text">Hooray! You wrote something :)</p>
+		</div>
 	</div>
-
+</div>
 </body>
 </html>
